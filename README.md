@@ -89,10 +89,13 @@ Step 6: Make the Domain controller Virtual Machine's NIC private IP address to b
   <img src="https://i.imgur.com/mQZyZx9.png">
 
 <h3>Step 7: Log into the Domain controller virtual machine and turn off the firewall.</h3>
-<h4> Open up remote desktop connection</h4>
+<h4> Open up remote desktop connection and enter credentials to log in.</h4>
 <img src="https://i.imgur.com/bpBcnxf.png">
+<img src="https://i.imgur.com/MTgpU0o.png">
 <img src="https://i.imgur.com/rD7Z0oe.png">
+<h4>In the virtual machine, right click start click run. To view firewall settings type "wf.msc". In the firewall settings click "Windows Defender Firewall Properties.</h4>
 <img src="https://i.imgur.com/mfLydZa.png">
+<h4>Once it opens up, for "Domain Profile, Private Profile, Public Profile", click "Firewall State" as off.</h4>
 <img src="https://i.imgur.com/Rv44UqO.png">
 <img src="https://i.imgur.com/SxC7UaU.png">
 <img src="">
