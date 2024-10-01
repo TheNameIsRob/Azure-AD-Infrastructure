@@ -54,9 +54,41 @@ This tutorial outlines how active directory is configured for administrative use
 <img src="https://i.imgur.com/DuGPwvn.png">
 <img src="https://i.imgur.com/bOr1LVC.png">
 
-<h4></h4>
+<h3>Step 3: Create the Domain Controller Virtual Machine (Windows Server 2022) named “DC-1” </h3>
+<h4>Click virtual machine</h4>
+<img src="https://i.imgur.com/JWxeaKW.png">
+<h4>Click create</h4>
+<img src="https://i.imgur.com/TqJqYmv.png">
+<h4>Name the Domain Controller. Then select the same region as before. For availability options type " No infrastucture redundancy required".Lastly for images click select "Windows Server 2022 Datacenter</h4>
+<img src="https://i.imgur.com/bdhTEra.png">
+<h4>Scroll down elect a standard size of at least 2 cpu's.Next type in administrator credentials to log on in the future. Make sure RDP is chosen as the inbound port rule.</h4>
+<img src="https://i.imgur.com/BMmcBry.png">
+<img src"https://i.imgur.com/gwOqLml.png">
+<h4>Go to the Networking section and choose the virtual network we created before while also clicking on the subnet created by our virtual network.</h4>
+<img src="https://i.imgur.com/KW7tuoX.png">
 
+<h4>Click on review+create , then click create and wait for a successful deployment of our virtual machine.</h4>
+<img src="https://i.imgur.com/jOKX3kv.png">
+<img src="https://i.imgur.com/Ey9uuAT.png">
+
+<h3>Step 5: Set up Client 1 by simply creating another virtual machine. (All previous steps for our first virtual machine will remain the same. But the virtual machine will be named "Client-1". We will be using Winows 10 Pro and will add new administrator credentials. After all these steps we can simply create the virtual machine as we did previously.</h3>
+<h4>Name the virtual machine "Client-1" and for images choose "Windows 10 pro"</h4>
+<img src="https://i.imgur.com/cA4kOhu.png">
 <h4></h4>
+<img src="https://i.imgur.com/530it50.png">
+<h4></h4>
+<img src="https://i.imgur.com/Ih6cSPA.png">
+
+Step 6: Make the Domain controller Virtual Machine's NIC private IP address to be static (This will allow the IP address not to change)
+<h3>
+<h4>Simply go to virtual setting of the virtual machine</h4>
+  <img src="https://i.imgur.com/tT9ANH7.png">
+<h4>Click ipconfig1</h4>
+  <img src="https://i.imgur.com/6fgDvgC.png">
+<h4>Under Private IP address settings change it from Dynamic to Static</h4>
+  <img src="https://i.imgur.com/mQZyZx9.png">
+
+</h3>
 </p>
 
 <br />
