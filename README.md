@@ -21,7 +21,7 @@ This tutorial outlines how active directory is configured for administrative use
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>High-Level Deployment and Configuration Steps : Part 1</h2>
 
 - Creating a virtual network and subnet
 - Create domain controller
@@ -85,11 +85,20 @@ Step 6: Make the Domain controller Virtual Machine's NIC private IP address to b
   <img src="https://i.imgur.com/tT9ANH7.png">
 <h4>Click ipconfig1</h4>
   <img src="https://i.imgur.com/6fgDvgC.png">
-<h4>Under Private IP address settings change it from Dynamic to Static</h4>
+<h4>Under Private IP address settings change it from Dynamic to Static and click save below.</h4>
   <img src="https://i.imgur.com/mQZyZx9.png">
 
-</h3>
-</p>
+<h3>Step 7: Log into the Domain controller virtual machine and turn off the firewall.</h3>
+<h4> Open up remote desktop connection</h4>
+<img src="https://i.imgur.com/bpBcnxf.png">
+<img src="https://i.imgur.com/rD7Z0oe.png">
+<img src="https://i.imgur.com/mfLydZa.png">
+<img src="https://i.imgur.com/Rv44UqO.png">
+<img src="https://i.imgur.com/SxC7UaU.png">
+<img src="">
+<img src="">
+
+
 
 <br />
 
