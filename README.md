@@ -4,7 +4,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1> Preparing and deploying active directory infrastructure (Azure)</h1>
+<h1> Preparing active directory infrastructure (Azure)</h1>
 This tutorial outlines how active directory is configured for administrative use.<br />
 
 
