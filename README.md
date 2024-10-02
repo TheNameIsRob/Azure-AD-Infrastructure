@@ -71,16 +71,15 @@ This tutorial outlines how active directory is configured for administrative use
 <img src="https://i.imgur.com/jOKX3kv.png">
 <img src="https://i.imgur.com/Ey9uuAT.png">
 
-<h3>Step 5: Set up Client 1 by simply creating another virtual machine. (All previous steps for our first virtual machine will remain the same. But the virtual machine will be named "Client-1". We will be using Winows 10 Pro and will add new administrator credentials. After all these steps we can simply create the virtual machine as we did previously.</h3>
-<h4>Name the virtual machine "Client-1" and for images choose "Windows 10 pro"</h4>
+<h4>Step 5: Set up Client 1 by simply creating another virtual machine. (All previous steps for our first virtual machine will remain the same. But the virtual machine will be named "Client-1". We will be using Winows 10 Pro and will add new administrator credentials. After all these steps we can simply create the virtual machine as we did previously.</h4>
+<h43Name the virtual machine "Client-1" and for images choose "Windows 10 pro"</h3>
 <img src="https://i.imgur.com/cA4kOhu.png">
 <h4></h4>
 <img src="https://i.imgur.com/530it50.png">
 <h4></h4>
 <img src="https://i.imgur.com/Ih6cSPA.png">
 
-Step 6: Make the Domain controller Virtual Machine's NIC private IP address to be static (This will allow the IP address not to change)
-<h3>
+Step 6: <h3>Make the Domain controller Virtual Machine's NIC private IP address to be static (This will allow the IP address not to change)</h3>
 <h4>Simply go to virtual setting of the virtual machine</h4>
   <img src="https://i.imgur.com/tT9ANH7.png">
 <h4>Click ipconfig1</h4>
@@ -98,8 +97,22 @@ Step 6: Make the Domain controller Virtual Machine's NIC private IP address to b
 <h4>Once it opens up, for "Domain Profile, Private Profile, Public Profile", click "Firewall State" as off.</h4>
 <img src="https://i.imgur.com/Rv44UqO.png">
 <img src="https://i.imgur.com/SxC7UaU.png">
-<img src="">
-<img src="">
+
+<h3>Step 8: Configure DNS settings</h3>
+<h4>Go to the Client-1 virtual machine. Then go to network settings and click on Network Interface.</h4>
+<img src="https://i.imgur.com/swSFwul.png">
+<h4>Click settings and then click DNS. Change DNS server options to custom and type in the domain controllers private IP address 10.0.0.4 Once this is finished click save.</h4>
+<img src="https://i.imgur.com/0v62gDY.png">
+
+  <h4>Step 9:Restart Client-1 virtual machine and then log in.</h4>
+<img src="https://i.imgur.com/24sj2Gq.png">
+<img src="https://i.imgur.com/ateR6tk.png">
+
+<h3>Step 10: Ping to test connectivity between both virtual machines.</h3>
+<h4>In powershell simply write "ping 10.0.0.4" the number being the domain controllers private IP address.</h4>
+<img src="https://i.imgur.com/YpcSksE.png">
+
+<h3>We can see that we recieve successful replies from the powershell meaning both virtual machines are ready to communicate with each other.</h3>
 
 
 
