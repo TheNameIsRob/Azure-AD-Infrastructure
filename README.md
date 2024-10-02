@@ -21,7 +21,7 @@ This tutorial outlines how active directory is configured for administrative use
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps : Part 1</h2>
+<h2>High-Level Deployment and Configuration Steps</h2>
 
 - Creating a virtual network and subnet
 - Create domain controller
