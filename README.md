@@ -26,7 +26,8 @@ This tutorial outlines how active directory is configured for administrative use
 - Creating a virtual network and subnet
 - Create domain controller
 - Set up an Azure client
-- Install Active Directory
+
+
   
 
 <h2>Deployment and Configuration Steps</h2>
